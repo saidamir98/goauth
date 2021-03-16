@@ -10,8 +10,6 @@ type RegisterUserModel struct {
 	Password     string     `json:"password"`
 	Active       int8       `json:"active" swaggerignore:"true"`
 	ExpiresAt    *time.Time `json:"expires_at"`
-	CreatedAt    *time.Time `json:"created_at" swaggerignore:"true"`
-	UpdatedAt    *time.Time `json:"updated_at" swaggerignore:"true"`
 	Phones       []string   `json:"phones"`
 	Email        string     `json:"email"`
 	Login        string     `json:"login"`
