@@ -62,3 +62,8 @@ type HasAccessModel struct {
 	ID               string `json:"id"`
 	RoleID           string `json:"role_id"`
 }
+
+// RefreshTokenModel ...
+type RefreshTokenModel struct {
+	Token string `json:"token" validate:"required"`
+}
